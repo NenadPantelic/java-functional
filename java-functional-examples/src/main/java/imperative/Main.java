@@ -13,7 +13,7 @@ public class Main {
                 new Person("Aysha", Person.Gender.FEMALE),
                 new Person("Alex", Person.Gender.MALE),
                 new Person("Alice", Person.Gender.FEMALE),
-                new Person("Jay", Person.Gender.OTHER)
+                new Person("Jay", Person.Gender.PREFER_NOT_TO_SAY)
         );
 
         // 1. imperative approach
@@ -40,6 +40,12 @@ public class Main {
         I: functional interfaces: interface with only one abstract method, but can have multiple default methods
         a) predicate: boolean-valued function with one argument
         b) function: function that accepts one argument and produces a result
+        c) bi-function: function (b) with two inputs and one output
+        d) consumer: operation that accepts single argument and returns no result
+        e) bi-consumer: operation that accepts two arguments and returns no result
+        f) predicate: represents a predicate (boolean-valued function) of one argument.
+        (bi-predicates have two arguments and evaluate logical expression as a result)
+        g) supplier: represents a supplier of results
         */
 
 
@@ -72,7 +78,7 @@ public class Main {
         enum Gender {
             MALE,
             FEMALE,
-            OTHER
+            PREFER_NOT_TO_SAY
         }
 
         @Override
