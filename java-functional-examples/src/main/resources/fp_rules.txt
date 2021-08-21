@@ -1,0 +1,15 @@
+Pure functional programming rules:
+==================================
+- No state (no global state, or variable) -> pure functions
+==================================
+- Pure functions
+==================================
+- No side effects -> does not mutate the state (change variable value) - self-contained function,
+depends only on the state defined inside the function
+==================================
+- Higher order functions
+====================================================================
+    * The function takes one or more functions as parameters
+    * The function returns another function as result.
+====================================================================
+
